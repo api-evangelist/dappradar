@@ -1,8 +1,23 @@
 aid: dappradar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dappradar.png
 name: DappRadar
-description: 'DappRadar is a company surfaced as a portfolio company of prosus-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: blockchain. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'DappRadar is a blockchain application discovery and analytics platform, widely described
+  as "the world''s dapp store." It tracks decentralized applications (dapps), NFT collections, tokens,
+  and DeFi activity across many blockchains, providing rankings, portfolio tracking, and on-chain market
+  intelligence to consumers, builders, and investors. Founded in 2018 and headquartered in Vilnius,
+  Lithuania, DappRadar is a Prosus Ventures portfolio company. This profile was seeded from that
+  portfolio and is being enriched by the API Evangelist pipeline.'
 url: https://raw.githubusercontent.com/api-evangelist/dappradar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Blockchain
+- Web3
+- NFT
+- DeFi
+- Analytics
+- Cryptocurrency
+- Dapps
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dappradar-domain-security.yml
+- type: LLMsTxt
+  url: llms/dappradar-llms.txt
 - type: Website
   url: https://dappradar.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
